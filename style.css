@@ -1,0 +1,87 @@
+
+/***** Page Flex Layout *****/
+/* A Handy Guide at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.wrapper {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction and if we allow the items to wrap */
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #654321;
+}
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 200px; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 1 400px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+}
+
+
+/***** Movie container flex layout *****/
+
+.moviecontainer {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction and if we allow the items to wrap */
+  flex-flow: row wrap;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-evenly;
+
+  padding: 5px;
+  background-color: #f9f4ef;
+}
+
+.movie {
+  background: white;
+  border: 2px solid lightgrey;
+  padding: 5px;
+  margin-top: 10px;
+  justify-content: center;
+
+}
+
+.movie img {
+  width: 200px;
+  height: 300px;
+}
+
+.movie .movie-title {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+.like {
+  color: #cc0000;
+}
+
+body {
+
+}
+
+header {
+  background-color: #654321;
+  color: #f9f4ef;
+  text-align: center;
+  font-size: x-large;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Movies JS </title>
+			<meta charset="utf-8"/>
+
+	    <!-- Use Font Awesome: https://fontawesome.com/ -->
+	    <!-- See how to use at https://fontawesome.com/how-to-use/web-fonts-with-css-->
+	    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+	    <!-- Project specific script and stylesheet -->
+	    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	    <script defer src="movies.js"></script>
+	</head>
+
+
+ 	<body onload="addFanMovies()">
+
+		<div class="wrapper">
+			<header class="header">
+				<i class="fas fa-film"></i>
+				MovieJS
+			</header>
+
+
+		<article class="main">
+			<div class="moviecontainer">
+				<!-- Hardcoded collection of movies -->
+				<!-- Movie 'The Godfather' -->
+				<div class="movie">
+					<img class="movie-img" alt="The Godfather" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,704,1000_AL_.jpg" />
+					<p class="movie-title">
+						The Godfather
+						<span class="like" onclick="toggleLike(this,0)">
+							<i class="fas fa-heart fa-2x hidden"></i>
+							<i class="far fa-heart fa-2x"></i>
+						</span>
+					</p>
+
+					<div class="rating">
+						<span class="star-rating" onclick="rateStars(this,1)">
+						  <i class="fas fa-star fa-2x hidden"></i>
+						  <i class="far fa-star fa-2x"></i>
+						</span>
+						<span class="star-rating" onclick="rateStars(this,2)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,3)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Movie 'Aliens' -->
+        <div class="movie">
+          <img alt="Aliens" src="https://m.media-amazon.com/images/M/MV5BZGU2OGY5ZTYtMWNhYy00NjZiLWI0NjUtZmNhY2JhNDRmODU3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,643,1000_AL_.jpg" />
+          <p class="movie-title">
+        	Aliens
+
+        	<span class="like" onclick="toggleLike(this,1)">
+            	<i class="fas fa-heart fa-2x hidden"></i>
+            	<i class="far fa-heart fa-2x"></i>
+          	</span>
+        	</p>
+          <div class="rating">
+            <span class="star-rating" onclick="rateStars(this,1)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,2)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,3)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Movie 'Terminator 2' -->
+        <div class="movie">
+          <img alt="Terminator 2" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY999_CR0,0,672,999_AL_.jpg" />
+          <p class="movie-title">
+          	Terminator 2
+	        	<span class="like" onclick="toggleLike(this,2)">
+            	<i class="fas fa-heart fa-2x hidden"></i>
+            	<i class="far fa-heart fa-2x"></i>
+          	</span>
+        	</p>
+
+          <div class="rating">
+            <span class="star-rating" onclick="rateStars(this,1)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,2)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,3)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Movie 'Pulp Fiction' -->
+        <div class="movie">
+          <img alt="Pulp Fiction" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@._V1_SY1000_CR0,0,673,1000_AL_.jpg" />
+          <p class="movie-title">
+            Pulp Fiction
+            <span class="like" onclick="toggleLike(this,3)">
+              <i class="fas fa-heart fa-2x hidden"></i>
+              <i class="far fa-heart fa-2x"></i>
+            </span>
+          </p>
+
+          <div class="rating">
+            <span class="star-rating" onclick="rateStars(this,1)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,2)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,3)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="movie">
+          <img alt="Matrix" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,665,1000_AL_.jpg" />
+          <p class="movie-title">
+            Matrix
+            <span class="like" onclick="toggleLike(this,4)">
+              <i class="fas fa-heart fa-2x hidden"></i>
+              <i class="far fa-heart fa-2x"></i>
+            </span>
+          </p>
+
+          <div class="rating">
+            <span class="star-rating" onclick="rateStars(this,1)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,2)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,3)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="movie">
+          <img alt="Inception" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg" />
+          <p class="movie-title">
+            Inception
+            <span class="like" onclick="toggleLike(this,5)">
+              <i class="fas fa-heart fa-2x hidden"></i>
+              <i class="far fa-heart fa-2x"></i>
+            </span>
+          </p>
+
+          <div class="rating">
+            <span class="star-rating" onclick="rateStars(this,1)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,2)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+            <span class="star-rating" onclick="rateStars(this,3)">
+              <i class="fas fa-star fa-2x hidden"></i>
+              <i class="far fa-star fa-2x"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <aside class="aside aside-1">
+      <div id="movies-liked-container" class="moviecontainer">
+          <!-- Liked Movies will go here -->
+      </div>
+    </aside>
+
+    <aside class="aside aside-2">
+      <div id="movies-fans-container" class="moviecontainer">
+          <!-- Fan Favorities Movies will go here - Will be filled onload of the page -->
+      </div>
+    </aside>
+
+  </div>
+
+  </body>
+</html>
