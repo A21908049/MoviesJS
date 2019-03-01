@@ -21,6 +21,10 @@ var moviesFanFavoritesArr = [
 // Toggles visibility in elem children hence toggling from liked - unliked
 function toggleLike(elem, idxMovie) {
 
+  i = idxMovie; star = elem;
+
+
+
   // TODO: IMPLEMENT STATUS TOGGLE OF LIKE ICON
 
   // TODO: IMPLEMENT UPDATE TO IN-MEMORY ARRAY staticMovies WITH LIKE STATUS

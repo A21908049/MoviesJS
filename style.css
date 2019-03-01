@@ -1,14 +1,13 @@
 
 /***** Page Flex Layout *****/
 /* A Handy Guide at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-
 .wrapper {
   /* We first create a flex layout context */
   display: flex;
   /* Then we define the flow direction and if we allow the items to wrap */
   flex-flow: row wrap;
 }
-
+ta
 .wrapper > * {
   padding: 10px;
   flex: 1 100%;
@@ -68,6 +67,10 @@
 
 .like {
   color: #cc0000;
+}
+
+.rating{
+  color: #F75200;
 }
 
 body {
